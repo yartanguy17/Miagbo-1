@@ -5,7 +5,6 @@
             <header-mobile />
             <main id="homepage-1">
                 <home-banner />
-                <site-feautures-fullwidth />
                 <home-default-deal-of-day
                     v-if="collections !== null"
                     collection-slug="deal-of-the-day"
