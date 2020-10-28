@@ -1,12 +1,12 @@
 {
     "header": {
         "shopByDepartment": "Boutique par Département",
-        "wellcomeText": "Bienvenue à Martfury Boutique Shopping en Ligne !",
-        "login": "Connexion",
-        "register": "Registre",
+        "wellcomeText": "Bienvenue sur Miagbo votre application de vente en Ligne !",
+        "login": "Se connecter",
+        "register": "S'inscrire",
         "navigationExtra": {
-            "sellOnMartfury": "Vendre sur Martfury",
-            "trackYourOrder": "Le Suivi De Votre Commande"
+            "sellOnMartfury": "Vendre sur Miagbo",
+            "trackYourOrder": "Votre Commande"
         },
         "miniCart": {
             "subTotal": "Sous-Total:",

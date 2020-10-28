@@ -9,7 +9,8 @@
                     v-if="collections !== null"
                     collection-slug="deal-of-the-day"
                 />
-                <home-ads-columns />
+                <!--<home-ads-columns />-->
+                <produits />
                 <home-default-top-categories />
                 <template v-if="collections !== null">
                     <conumer-electronics
@@ -31,6 +32,7 @@
     </v-app>
 </template>
 <script>
+import Produits from '@/components/partials/homepage/default/produits';
 import { mapState } from 'vuex';
 import DownloadApp from '~/components/partials/commons/DownloadApp';
 import FooterFullwidth from '~/components/shared/footers/FooterFullwidth';
@@ -70,7 +72,8 @@ export default {
         NewArrivals,
         HomeDefaultTopCategories,
         Clothings,
-        ConumerElectronics
+        ConumerElectronics,
+        Produits
     },
 
     transition: 'zoom',

@@ -4,8 +4,7 @@
             <div class="ps-container">
                 <div class="header__left">
                     <nuxt-link to="/" class="ps-logo">
-                        <img src="/img/logo_miagbo.png" alt="miagbo" style="height:50px;width:70px;"/>
-                        <span style="height:200px;width:150px;color:#ffff00;">Miagbo</span>
+                        <img src="/img/logo_miagbo.png" alt="miagbo" style="height:70px;width:70px;"/>
                     </nuxt-link>
                     <div class="menu--product-categories">
                         <div class="menu__toggle">

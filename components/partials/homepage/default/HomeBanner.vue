@@ -9,8 +9,10 @@
                                 <nuxt-link to="/shop">
                                     <a>
                                         <img
-                                            :src="baseUrl + products[0].images"
+                                            src="@/static/images/slider-2-1.jpeg"
                                             alt="martfury"
+                                            width="1230px"
+                                            height="700px"
                                         />
                                     </a>
                                 </nuxt-link>
@@ -21,8 +23,10 @@
                                 <nuxt-link to="/shop">
                                     <a>
                                         <img
-                                            :src="baseUrl + products[1].images"
+                                            src="@/static/images/slider-2-2.jpeg"
                                             alt="martfury"
+                                            width="1230px"
+                                            height="700px"
                                         />
                                     </a>
                                 </nuxt-link>
@@ -33,8 +37,24 @@
                                 <nuxt-link to="/shop">
                                     <a>
                                         <img
-                                            :src="baseUrl + products[2].images"
+                                            src="@/static/images/slider-2-3.jpeg"
                                             alt="martfury"
+                                            width="1230px"
+                                            height="700px"
+                                        />
+                                    </a>
+                                </nuxt-link>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="ps-banner">
+                                <nuxt-link to="/shop">
+                                    <a>
+                                        <img
+                                            src="@/static/images/slider-2-4.jpeg"
+                                            alt="martfury"
+                                            width="1230px"
+                                            height="700px"                                            
                                         />
                                     </a>
                                 </nuxt-link>
@@ -58,13 +78,13 @@
             <div class="ps-section__right">
                 <nuxt-link to="/shop" class="ps-collection">
                     <img
-                        :src="baseUrl + products[3].images"
+                        src="@/static/images/slider-1.jpeg"
                         alt="martfury"
                     />
                 </nuxt-link>
                 <nuxt-link to="/shop" class="ps-collection">
                     <img
-                        :src="baseUrl + products[4].images"
+                        src="@/static/images/slider-3.jpeg"
                         alt="martfury"
                     />
                 </nuxt-link>
