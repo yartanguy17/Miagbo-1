@@ -1,11 +1,11 @@
-<template lang="html">
+<template >
     <div class="ps-top-categories" v-if="!$fetchState.pending">
         <div class="ps-container">
             <h3>Nos Produits</h3>
             <div class="row">
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 " v-for="produit of produits" :key="produit.uid">
                     <div class="ps-block--category">
-                        <nuxt-link to="/shop">
+                        <nuxt-link :to="`/product/${produit.uid}`">
                             <a class="ps-block__overlay"></a>
                         </nuxt-link>                        
                         <img

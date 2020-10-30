@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
     <div class="ps-product--detail ps-product--fullwidth">
         <div class="ps-product__header">
             <thumbnail-default />
