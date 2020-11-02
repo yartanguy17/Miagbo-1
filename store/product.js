@@ -1,5 +1,6 @@
 import Repository, { serializeQuery } from '~/repositories/Repository.js';
 import { baseUrl } from '~/repositories/Repository';
+import axios from 'axios';
 
 export const state = () => ({
     product: null,
@@ -88,6 +89,16 @@ export const actions = {
         const reponse = await Repository.get(`${baseUrl}/products/${payload}`)
             .then(response => {
                 commit('setProduct', response.data);
+                return response.data;
+            })
+            .catch(error => ({ error: JSON.stringify(error) }));
+        return reponse;
+    },
+    
+
+    async getProduitsById({ commit }, payload) {
+        const reponse = await axios.get(`http://51.89.97.33:5500/api/products/${payload}`)
+            .then(response => {
                 return response.data;
             })
             .catch(error => ({ error: JSON.stringify(error) }));
