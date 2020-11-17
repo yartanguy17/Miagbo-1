@@ -6,6 +6,8 @@ export const state = () => ({
     product: null,
     products: null,
     searchResults: null,
+    // By tanguy
+    recherche: null,
     cartProducts: null,
     wishlistItems: null,
     compareItems: null,
@@ -43,6 +45,10 @@ export const mutations = {
 
     setSearchResults(state, payload) {
         state.searchResults = payload;
+    },
+// By tanguy
+    setResults(state, payload) {
+        state.recherche= payload;
     },
 
     setTotal(state, payload) {
@@ -113,6 +119,18 @@ export const actions = {
                 commit('setSearchResults', response.data);
                 commit('setTotal', response.data.length);
                 return response.data;
+            })
+            .catch(error => ({ error: JSON.stringify(error) }));
+        return reponse;
+    },
+// By tanguy
+    async getCategoryByKeyword({ commit }, payload) {
+        const reponse = await fetch('http://51.89.97.33:5500/api/categories')
+       
+            .then(response => {
+                commit('setResults', response.nom);
+                //commit('setTotal', response.data.length);
+                return response.nom;
             })
             .catch(error => ({ error: JSON.stringify(error) }));
         return reponse;
