@@ -11,9 +11,10 @@
                         <img
                             :src="baseUrl + produit.images"
                             :alt="produit.nom"
-                            style="height:200px; width:300px"
+                            style="height:200px; width:500px"
                         />
                         <p>{{produit.nom}}</p>
+                        <p style="color:red">{{produit.prix}}</p>
                     </div>
                 </div>
             </div>
