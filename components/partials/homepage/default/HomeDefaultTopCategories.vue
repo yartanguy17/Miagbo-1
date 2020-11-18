@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 " v-for="category of categories" :key="category.uid">
                     <div class="ps-block--category">
-                        <nuxt-link to="/shop">
+                        <nuxt-link :to="`/shop/${category.uid}`">
                             <a class="ps-block__overlay"></a>
                         </nuxt-link>                        
                         <img
